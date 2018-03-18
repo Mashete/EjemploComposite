@@ -44,7 +44,10 @@
   <ItemGroup>
     <Compile Include="Productos\Actividad.cs" />
     <Compile Include="Productos\Aereo.cs" />
+    <Compile Include="Productos\AsistenciaViajero.cs" />
     <Compile Include="Productos\Auto.cs" />
+    <Compile Include="Productos\Composite\ProductoAbstracto.cs" />
+    <Compile Include="Productos\Composite\ProductoCompuesto.cs" />
     <Compile Include="Productos\Hotel.cs" />
     <Compile Include="Productos\Paquete.cs" />
     <Compile Include="Productos\Composite\Producto.cs" />
