@@ -10,6 +10,6 @@ namespace Composite.Productos
     {
         public float Precio { get; set; }
         public string Nombre { get; set; }
-        public string[] Restricciones { get; set; }
+        public bool Cancelado { get; set; }
     }
 }

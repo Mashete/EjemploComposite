@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Composite.Productos
 {
-    public class SeguroEquipaje : Producto
+    public class SeguroAuto : Producto
     {
     }
 }
