@@ -1,16 +1,12 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Composite
+namespace Composite.Productos
 {
-    class Program
+    public class Aereo : Producto
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
