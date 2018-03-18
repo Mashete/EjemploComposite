@@ -47,13 +47,14 @@
     <Compile Include="Productos\Auto.cs" />
     <Compile Include="Productos\Hotel.cs" />
     <Compile Include="Productos\Paquete.cs" />
-    <Compile Include="Productos\Producto.cs" />
-    <Compile Include="Productos\SeguroEquipaje.cs" />
+    <Compile Include="Productos\Composite\Producto.cs" />
+    <Compile Include="Productos\SeguroAuto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

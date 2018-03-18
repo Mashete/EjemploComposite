@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Composite.Productos
 {
-    public class Hotel : ProductoCompuesto
+    public class AsistenciaViajero : Producto
     {
     }
 }
