@@ -9,6 +9,7 @@ namespace Composite.Productos.Composite
     public class ProductoCompuesto : ProductoAbstracto
     {
         public string Nombre { get; set; }
+        public float Precio { get; set; }
 
         private List<ProductoAbstracto> subProductos;
 
@@ -34,6 +35,7 @@ namespace Composite.Productos.Composite
 
         public override void Cancelar()
         {
+            Console.WriteLine(string.Concat("Ejecutar cancelacion de ", this.GetType()));
             foreach (var producto in this.subProductos)
             {
                 producto.Cancelar();
@@ -42,10 +44,10 @@ namespace Composite.Productos.Composite
 
         public override float ObtenerPrecioTotal()
         {
-            float total = 0;
+            float total = this.Precio;
             foreach (var producto in this.subProductos)
             {
-                total = +producto.ObtenerPrecioTotal();
+                total += producto.ObtenerPrecioTotal();
             }
             return total;
         }
@@ -55,7 +57,7 @@ namespace Composite.Productos.Composite
             string nombre = this.Nombre;
             foreach (var producto in this.subProductos)
             {
-                nombre = string.Concat(nombre, producto.ObtenerNombre());
+                nombre = string.Concat(nombre, "/", producto.ObtenerNombre());
             }
             return nombre;
         }

@@ -20,7 +20,7 @@ namespace Composite.Productos.Composite
 
         public override void Cancelar()
         {
-            //Llamar a WebService que cancela
+            Console.WriteLine(string.Concat("Ejecutar cancelacion de ", this.GetType()));
             this.Cancelado = true;
         }
 
